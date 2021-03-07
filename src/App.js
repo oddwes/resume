@@ -74,7 +74,7 @@ function App() {
                 <b>2011-09 ~ 2016-04</b>
               </Col>
               <Col>
-                <b>Bachelar of Enginerring (Computer Engineering)</b><br/>
+                <b>Bachelar of Engineering (Computer Engineering)</b><br/>
                 <i>Concordia University</i>
               </Col>
             </Row>
@@ -106,7 +106,7 @@ function App() {
               </Col>
               <Col>
                 <b>"Sumo" Robot</b><br/>
-                Atmega8 microcontrolle, edge detection and opponent tracking
+                Atmega8 microcontroller, edge detection and opponent tracking
               </Col>
             </Row>
           </Container>

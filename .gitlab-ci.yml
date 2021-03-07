@@ -14,7 +14,7 @@ prod_build:
       - yarn build
   artifacts:
     paths:
-      -build/
+      - build/
 
 docker_image_build_release:
   image:

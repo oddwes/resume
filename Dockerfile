@@ -1,8 +1,10 @@
+FROM node:14.16.0-alpine3.10 as build-stage
+WORKDIR /app
+COPY . /app/
+RUN yarn install && yarn build
+
 FROM nginx:alpine
-RUN ls kaniko/*
-RUN ls builds/oddwes-main/resume/*
-COPY builds/oddwes-main/resume/build/index.html /usr/share/nginx/html/
-RUN rm /etc/nginx/conf.d/default.conf
-COPY builds/oddwes-main/resume/nginx.conf /etc/nginx/conf.d
-EXPOSE 80
-ENTRYPOINT ["nginx","-g","daemon off;"]
+WORKDIR /usr/share/nginx/html
+RUN rm -rf ./*
+COPY --from=build-stage /app/build .
+ENTRYPOINT ["nginx", "-g", "daemon off;"]

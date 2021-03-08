@@ -20,6 +20,8 @@ deploy:
   stage: deploy
   only:
       - tags
+  environment:
+    name: production
   before_script:
       - sed -ie "s/deploy-date-value/$(date)/g" kubernetes/deployment.yaml
       - mkdir -p /root/.kube/ && touch /root/.kube/config

@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://gitlab.com/oddwes-main/resume/compare/v0.1.18...v1.0.0) (2021-03-09)
+
 ### [0.1.18](https://gitlab.com/oddwes-main/resume/compare/v0.1.17...v0.1.18) (2021-03-09)
 
 ### [0.1.17](https://gitlab.com/oddwes-main/resume/compare/v0.1.16...v0.1.17) (2021-03-09)

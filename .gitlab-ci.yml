@@ -25,6 +25,8 @@ deploy:
   before_script:
       - sed -ie "s/deploy-date-value/$(date)/g" kubernetes/deployment.yaml
       - mkdir -p /root/.kube/ && touch /root/.kube/config
+      - echo ${KUBECONFIG}
+      - echo ${KUBERNETES_KUBE_CONFIG}
       - echo ${KUBERNETES_KUBE_CONFIG} | base64 -d > ${KUBECONFIG}
   script:
       - kubectl apply -f kubernetes/deployment.yaml

@@ -94,7 +94,7 @@ function App() {
             </Row>
             <Row className="py-4">
               <Col sm={2} className="centered">
-                <b>2011-09 ~ 2016-04</b>
+                <b>2009-09 ~ 2011-04</b>
               </Col>
               <Col>
                 <b>Bachelor of Science: Pure and Applied Sciences</b><br />

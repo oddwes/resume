@@ -2,14 +2,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: resume
-  namespace: default
+  namespace: public
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
   revisionHistoryLimit: 5
   selector:
     matchLabels:
-      workload.user.cattle.io/workloadselector: deployment-default-resume
+      workload.user.cattle.io/workloadselector: deployment-public-resume
   strategy:
     type: Recreate
   template:

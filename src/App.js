@@ -62,7 +62,7 @@ function App() {
               </Col>
               <Col>
                 <p>
-                  <b>Java developer</b><br />
+                  <b>Java Developer</b><br />
                   <i>123Certification, Montreal, QC</i>
                 </p>
                 <p className="pl-4">
@@ -111,7 +111,7 @@ function App() {
                 <b>2011-09 ~ 2016-04</b>
               </Col>
               <Col>
-                <b>Bachelar of Engineering (Computer Engineering)</b><br />
+                <b>Bachelor of Engineering (Computer Engineering)</b><br />
                 <i>Concordia University</i>
               </Col>
             </Row>
@@ -120,7 +120,7 @@ function App() {
                 <b>2009-09 ~ 2011-04</b>
               </Col>
               <Col>
-                <b>Bachelor of Science: Pure and Applied Sciences</b><br />
+                <b>Bachelor of Science (Pure and Applied Sciences)</b><br />
                 <i>Marianopolis College</i>
               </Col>
             </Row>

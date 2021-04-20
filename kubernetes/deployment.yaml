@@ -4,17 +4,24 @@ metadata:
   name: resume-deployment
   namespace: public
 spec:
-  progressDeadlineSeconds: 600
   replicas: 1
-  revisionHistoryLimit: 5
   selector:
     matchLabels:
-      workload.user.cattle.io/workloadselector: deployment-public-resume
+      app: resume-workload
+  revisionHistoryLimit: 2
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: resume-deployment
+        app: resume-workload
       annotations:
         deploy-date: "deploy-date-value"
+    spec:
+      containers:
+      - name: resume-workload
+        image: registry.gitlab.com/oddwes-main/resume
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: gitlab-auth

@@ -26,9 +26,20 @@ function App() {
           <Container>
             <h3>Work</h3>
             <Line />
-            <Row>
+            <Row className="pb-4">
               <Col sm={2} className="centered">
-                <b>2017-11 ~ Current</b>
+                <b>2021-04 ~ Present</b>
+              </Col>
+              <Col>
+                <p>
+                  <b>Ruby Developer</b><br />
+                  <i>Jane.app, Vancouver, BC</i>
+                </p>
+              </Col>
+            </Row>
+            <Row className="pb-4">
+              <Col sm={2} className="centered">
+                <b>2017-11 ~ 2021-04</b>
               </Col>
               <Col>
                 <p>
@@ -45,7 +56,7 @@ function App() {
                 </p>
               </Col>
             </Row>
-            <Row className="py-4">
+            <Row className="pb-4">
               <Col sm={2} className="centered">
                 <b>2015-09 ~ 2017-10</b>
               </Col>
@@ -71,11 +82,23 @@ function App() {
             <Line />
             <Container className="pl-4">
               <p>
+                <b>StravaBoards</b><br />
+              </p>
+              <p className="pb-4 pl-2">
+                <List bulleted>
+                  <List.Item>Technologies: React, Ruby on Rails, Docker, Kubernetes, Gitlab CI/CD</List.Item>
+                  <List.Item><a href="https://stravaboards.oddwes.ca" target="_blank">stravaboards.oddwes.ca</a></List.Item>
+                </List>
+              </p>
+            </Container>
+            <Container className="pl-4">
+              <p>
                 <b>Resume Webpage</b><br />
               </p>
               <p className="pb-4 pl-2">
                 <List bulleted>
                   <List.Item>Technologies: React, Docker, Kubernetes, Gitlab CI/CD</List.Item>
+                  <List.Item><a href="https://resume.oddwes.ca" target="_blank">resume.oddwes.ca</a></List.Item>
                 </List>
               </p>
             </Container>

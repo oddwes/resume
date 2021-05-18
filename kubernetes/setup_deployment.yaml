@@ -52,5 +52,7 @@ spec:
     services:
     - name: resume-workload
       port: 80
+  redirectScheme:
+    scheme: https
   tls:
     certResolver: letsencrypt

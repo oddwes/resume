@@ -32,9 +32,14 @@ function App() {
               </Col>
               <Col>
                 <p>
-                  <b>Ruby Developer</b><br />
+                  <b>Senior Developer</b><br />
                   <i>Jane.app, Vancouver, BC</i>
                 </p>
+                <p className="pl-4">
+                    <List bulleted>
+                      <List.Item>Project lead for Waitlist Notifications</List.Item>
+                    </List>
+                  </p>
               </Col>
             </Row>
             <Row className="pb-4">

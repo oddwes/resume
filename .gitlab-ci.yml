@@ -56,4 +56,4 @@ docker-build:
     - chmod +x /usr/bin/docker-buildx
   script:
     - docker-buildx create --use
-    - docker buildx build  --push --platform linux/arm64,linux/amd64 -t $CI_REGISTRY_IMAGE:latest -t $CI_REGISTRY_IMAGE:$CI_COMMIT_TAG .
+    - docker-buildx build  --push --platform linux/arm64,linux/amd64 -t $CI_REGISTRY_IMAGE:latest -t $CI_REGISTRY_IMAGE:$CI_COMMIT_TAG .

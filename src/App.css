@@ -42,3 +42,18 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.rounded-button {
+  border-radius: 0px 0px 0px 6px;
+  background-color: #749DAD;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  outline-offset: 4px;
+  text-transform: uppercase;
+  z-index: 10;
+  position: fixed;
+  top:0;
+  right:0;
+}

@@ -20,7 +20,7 @@ amd64_image_build_release:
       --context $CI_PROJECT_DIR
       --dockerfile $CI_PROJECT_DIR/Dockerfile
       --destination $CI_REGISTRY_IMAGE:latest
-      --customPlatform linux/amd64,linux/arm64
+      --customPlatform linux/arm64
 
 # deploy:
 #   image: dtzar/helm-kubectl

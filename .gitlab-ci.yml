@@ -7,20 +7,17 @@ variables:
 
 image_build_release:
   image: jdrouet/docker-with-buildx:stable
-
-variables:
-  DOCKER_HOST: tcp://docker:2375/
-  DOCKER_DRIVER: overlay2
-
-services:
-  - docker:dind
-
-build:
-  stage: build
-  script:
-    - docker login registry.gitlab.com -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker buildx create --use
-    - docker buildx build  --push --platform linux/arm64,linux/amd64 -t registry.gitlab.com/oddwes-main/resume:latest .
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+  services:
+    - docker:dind
+  build:
+    stage: build_docker
+    script:
+      - docker login registry.gitlab.com -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+      - docker buildx create --use
+      - docker buildx build  --push --platform linux/arm64,linux/amd64 -t registry.gitlab.com/oddwes-main/resume:latest .
 
 deploy:
   image: dtzar/helm-kubectl

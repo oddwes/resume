@@ -5,40 +5,22 @@ stages:
 variables:
   KUBECONFIG:  /root/.kube/config
 
-arm_image_build_release:
-  image:
-    name: gcr.io/kaniko-project/executor:debug
-    entrypoint: [""]
-  stage: build_docker
-  only:
-      - tags
-  script:
-    - mkdir -p /kaniko/.docker
-    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
-    - >-
-      /kaniko/executor
-      --context $CI_PROJECT_DIR
-      --dockerfile $CI_PROJECT_DIR/Dockerfile
-      --destination $CI_REGISTRY_IMAGE:latest
-      --destination $CI_REGISTRY_IMAGE:$CI_COMMIT_TAG
-      --customPlatform=linux/arm
+image_build_release:
+  image: jdrouet/docker-with-buildx:stable
 
-amd64_image_build_release:
-  image:
-    name: gcr.io/kaniko-project/executor:debug
-    entrypoint: [""]
-  stage: build_docker
-  only:
-      - tags
+variables:
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_DRIVER: overlay2
+
+services:
+  - docker:dind
+
+build:
+  stage: build
   script:
-    - mkdir -p /kaniko/.docker
-    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
-    - >-
-      /kaniko/executor
-      --context $CI_PROJECT_DIR
-      --dockerfile $CI_PROJECT_DIR/Dockerfile
-      --destination $CI_REGISTRY_IMAGE:latest
-      --destination $CI_REGISTRY_IMAGE:$CI_COMMIT_TAG
+    - docker login registry.gitlab.com -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
+    - docker buildx create --use
+    - docker buildx build  --push --platform linux/arm64,linux/amd64 -t registry.gitlab.com/oddwes-main/resume:latest .
 
 deploy:
   image: dtzar/helm-kubectl

@@ -35,18 +35,24 @@
 # #   script:
 # #       - kubectl apply -f kubernetes/pipeline_deployment.yaml
 
-image: jdrouet/docker-with-buildx:stable
 
-variables:
-  DOCKER_HOST: tcp://localhost:2375/
-  DOCKER_DRIVER: overlay2
+image: docker:20.10.8
 
 services:
-  - docker:dind
+  - docker:20.10.8-dind
 
-build:
-  stage: build
+variables:
+  DOCKER_DRIVER: overlay2
+  BUILDX_VERSION: "v0.6.1"
+  BUILDX_ARCH: "linux-amd64"
+
+docker-build:
+  before_script:
+    - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY --username
+      $CI_REGISTRY_USER --password-stdin
+    - wget -O /usr/bin/docker-buildx
+      https://github.com/docker/buildx/releases/download/${BUILDX_VERSION}/buildx-${BUILDX_VERSION}.${BUILDX_ARCH}
+    - chmod +x /usr/bin/docker-buildx
   script:
-    - docker login registry.gitlab.com -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
-    - docker buildx create --use
+    - docker-buildx create --use
     - docker buildx build  --push --platform linux/arm64,linux/amd64 -t $CI_REGISTRY_IMAGE:latest -t $CI_REGISTRY_IMAGE:$CI_COMMIT_TAG .

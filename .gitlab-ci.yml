@@ -10,7 +10,7 @@ build_images:
   stage: docker_build
   only:
     - tags
-  environment :
+  environment:
     name: production
   services:
     - docker:20.10.8-dind

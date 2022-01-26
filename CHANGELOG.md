@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.22](https://gitlab.com/oddwes-main/resume/compare/v1.1.21...v1.1.22) (2022-01-26)
+
 ### [1.1.21](https://gitlab.com/oddwes-main/resume/compare/v1.1.20...v1.1.21) (2022-01-26)
 
 ### [1.1.20](https://gitlab.com/oddwes-main/resume/compare/v1.1.19...v1.1.20) (2022-01-26)

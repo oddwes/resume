@@ -28,11 +28,11 @@ function App() {
             <Line />
             <Row className="pb-4">
               <Col sm={2} className="centered">
-                <b>2021-04 ~ Present</b>
+                <b>2021-04 ~ 2022-02</b>
               </Col>
               <Col>
                 <p>
-                  <b>Senior Developer</b><br />
+                  <b>Ruby Developer</b><br />
                   <i>Jane.app, Vancouver, BC</i>
                 </p>
                 <p className="pl-4">

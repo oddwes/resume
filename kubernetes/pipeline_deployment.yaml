@@ -23,5 +23,6 @@ spec:
         image: registry.gitlab.com/oddwes-main/resume
         ports:
         - containerPort: 80
+          hostPort: 8080
       imagePullSecrets:
       - name: gitlab-auth

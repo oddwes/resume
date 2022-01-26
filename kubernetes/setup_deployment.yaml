@@ -24,15 +24,3 @@ spec:
           hostPort: 8080
       imagePullSecrets:
       - name: gitlab-auth
-        #---
-        #apiVersion: v1
-        #kind: Service
-        #metadata:
-        #  name: resume-workload
-        #spec:
-        #  selector:
-        #    app: resume-workload
-        #  ports:
-        #    - protocol: TCP
-        #      port: 80
-        #      targetPort: 80

@@ -2,7 +2,13 @@ stages:
   - docker_build
   - deploy
 
+services:
+  - docker:20.10.8-dind
+
 variables:
+  DOCKER_DRIVER: overlay2
+  BUILDX_VERSION: "v0.6.1"
+  BUILDX_ARCH: "linux-amd64"
   KUBECONFIG:  /root/.kube/config
 
 build_images:
@@ -12,23 +18,16 @@ build_images:
     - tags
   environment:
     name: production
-  services:
-    - docker:20.10.8-dind
-  variables:
-    DOCKER_DRIVER: overlay2
-    BUILDX_VERSION: "v0.6.1"
-    BUILDX_ARCH: "linux-amd64"
-  docker-build:
-    before_script:
-      - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY --username
-        $CI_REGISTRY_USER --password-stdin
-      - wget -O /usr/bin/docker-buildx
-        https://github.com/docker/buildx/releases/download/${BUILDX_VERSION}/buildx-${BUILDX_VERSION}.${BUILDX_ARCH}
-      - chmod +x /usr/bin/docker-buildx
-      - docker info
-    script:
-      - docker-buildx create --use
-      - docker-buildx build --platform linux/arm,linux/amd64 -t $CI_REGISTRY_IMAGE:latest --push .
+  before_script:
+    - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY --username
+      $CI_REGISTRY_USER --password-stdin
+    - wget -O /usr/bin/docker-buildx
+      https://github.com/docker/buildx/releases/download/${BUILDX_VERSION}/buildx-${BUILDX_VERSION}.${BUILDX_ARCH}
+    - chmod +x /usr/bin/docker-buildx
+    - docker info
+  script:
+    - docker-buildx create --use
+    - docker-buildx build --platform linux/arm,linux/amd64 -t $CI_REGISTRY_IMAGE:latest --push .
 
 deploy:
   image: dtzar/helm-kubectl

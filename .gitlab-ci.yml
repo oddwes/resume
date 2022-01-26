@@ -12,6 +12,8 @@ image_build_release:
     - tags
   services:
     - docker:dind
+  variables:
+    DOCKER_HOST: tcp://localhost:2375/
   before_script:
     - docker login registry.gitlab.com -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD
   script:

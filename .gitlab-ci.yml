@@ -26,20 +26,20 @@ build_images:
     - docker info
   script:
     - docker-buildx create --use
-    - docker-buildx build --platform linux/arm,linux/amd64 -t $CI_REGISTRY_IMAGE:latest --push .
+    - docker-buildx build --platform linux/arm -t $CI_REGISTRY_IMAGE:latest --push .
 
-deploy:
-  image: dtzar/helm-kubectl
-  stage: deploy
-  only:
-      - tags
-  environment:
-    name: production
-  before_script:
-      - sed -ie "s/deploy-date-value/$(date)/g" kubernetes/pipeline_deployment.yaml
-      - mkdir -p /root/.kube/ && touch /root/.kube/config
-      - echo ${KUBERNETES_KUBE_CONFIG} | base64 -d > ${KUBECONFIG}
-  script:
-      - kubectl apply -f kubernetes/pipeline_deployment.yaml
+# deploy:
+#   image: dtzar/helm-kubectl
+#   stage: deploy
+#   only:
+#       - tags
+#   environment:
+#     name: production
+#   before_script:
+#       - sed -ie "s/deploy-date-value/$(date)/g" kubernetes/pipeline_deployment.yaml
+#       - mkdir -p /root/.kube/ && touch /root/.kube/config
+#       - echo ${KUBERNETES_KUBE_CONFIG} | base64 -d > ${KUBECONFIG}
+#   script:
+#       - kubectl apply -f kubernetes/pipeline_deployment.yaml
 
 

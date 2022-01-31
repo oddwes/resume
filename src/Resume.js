@@ -26,9 +26,20 @@ class Resume extends React.Component {
             <Container>
               <h3>Work</h3>
               <Line />
+							<Row className="pb-4">
+                <Col sm={2} className="centered">
+                  <b>2022-01 ~ Present</b>
+                </Col>
+                <Col>
+                  <p>
+                    <b>Senior Developer</b><br />
+                    <i>Jane.app, Vancouver, BC</i>
+                  </p>
+                </Col>
+              </Row>
               <Row className="pb-4">
                 <Col sm={2} className="centered">
-                  <b>2021-04 ~ Present</b>
+                  <b>2021-04 ~ 2022-01</b>
                 </Col>
                 <Col>
                   <p>

@@ -26,7 +26,7 @@ build_images:
     - docker info
   script:
     - docker-buildx create --use
-    - docker-buildx build --platform linux/arm -t $REGISTRY:latest --push .
+    - docker-buildx build --platform linux/arm -t ${REGISTRY}/resume:latest --push .
 
 # deploy:
 #   image: dtzar/helm-kubectl

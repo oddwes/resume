@@ -4,8 +4,6 @@ import { Card, Container, Row, Col } from "react-bootstrap";
 import { List } from 'semantic-ui-react';
 import Line from "./Line";
 
-import './Resume.css'
-
 class Resume extends React.Component {
   render () {
     return (

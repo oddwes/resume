@@ -5,8 +5,8 @@ import { List } from 'semantic-ui-react';
 import Line from "./Line";
 
 class Resume extends React.Component {
-  render () {
-    return (
+	render() {
+		return (
 			<Container>
 				<Card>
 					<Card.Header style={{ color: 'white', backgroundColor: "#30353F" }}>
@@ -36,10 +36,11 @@ class Resume extends React.Component {
 										<i>Jane.app, Vancouver, BC</i>
 									</p>
 									<p className="pl-4">
-											<List bulleted>
-												<List.Item>Project lead for Waitlist Notifications</List.Item>
-											</List>
-										</p>
+										<List bulleted>
+											<List.Item>Project lead for Waitlist Notifications, Late Cancellation Fees and Group Profiles</List.Item>
+											<List.Item>Jane intern program mentor</List.Item>
+										</List>
+									</p>
 								</Col>
 							</Row>
 							<Row className="pb-4">
@@ -138,8 +139,8 @@ class Resume extends React.Component {
 					</Card.Body>
 				</Card>
 			</Container>
-    )
-  }
+		)
+	}
 }
 
 export default Resume;

@@ -10,11 +10,7 @@ function App() {
   })
 
   return (
-    <>
-      <button className="rounded-button" onClick={handlePrint}>Print to PDF</button>
-      <br />
-      <Resume ref={componentRef}/>
-    </>
+    <Resume ref={componentRef}/>
   )
 }
 

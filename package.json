@@ -1,6 +1,7 @@
 {
   "name": "resume",
   "version": "1.1.29",
+  "homepage": "https://oddwes.github.io/resume",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -10,13 +11,15 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.0",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.1",
     "react-to-print": "^2.14.4",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "standard-version": "^9.1.1"
   }
 }

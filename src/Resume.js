@@ -86,7 +86,7 @@ class Resume extends React.Component {
 							<Line />
 							<Row>
 								<Col sm={2} className="centered">
-									<b>2023</b>
+									<b>2024</b>
 								</Col>
 								<Col>
 									<b>Learn Solidity & Etherem Dev Bootcamp</b><br />

@@ -8,18 +8,16 @@ class Resume extends React.Component {
 	render() {
 		return (
 			<Container>
+				<br />
 				<Card>
 					<Card.Header style={{ color: 'white', backgroundColor: "#30353F" }}>
 						<h1>Julian Lai</h1>
 						<h3>An enthusiastic developer looking for his next project to obsess over</h3>
 						<div>
-							<b>Phone</b> (514) 962-4384
+							<b>Phone</b> (778) 682-4384
 						</div>
 						<div>
 							<b>E-mail</b> julianlai.777@gmail.com
-						</div>
-						<div>
-							<b>Linkedin</b> linkedin.com/in/julian-lai-06223795
 						</div>
 					</Card.Header>
 					<Card.Body text="black">
@@ -28,7 +26,7 @@ class Resume extends React.Component {
 							<Line />
 							<Row className="pb-4">
 								<Col sm={2} className="centered">
-									<b>2021-04 ~ Present</b>
+									<b>2021 ~ Present</b>
 								</Col>
 								<Col>
 									<p>
@@ -45,7 +43,7 @@ class Resume extends React.Component {
 							</Row>
 							<Row className="pb-4">
 								<Col sm={2} className="centered">
-									<b>2017-11 ~ 2021-04</b>
+									<b>2017 ~ 2021</b>
 								</Col>
 								<Col>
 									<p>
@@ -64,7 +62,7 @@ class Resume extends React.Component {
 							</Row>
 							<Row className="pb-4">
 								<Col sm={2} className="centered">
-									<b>2015-09 ~ 2017-10</b>
+									<b>2015 ~ 2017</b>
 								</Col>
 								<Col>
 									<p>
@@ -88,7 +86,17 @@ class Resume extends React.Component {
 							<Line />
 							<Row>
 								<Col sm={2} className="centered">
-									<b>2011-09 ~ 2016-04</b>
+									<b>2023</b>
+								</Col>
+								<Col>
+									<b>Learn Solidity & Etherem Dev Bootcamp</b><br />
+									<i>Alchemy University</i>
+								</Col>
+							</Row>
+							<br />
+							<Row>
+								<Col sm={2} className="centered">
+									<b>2011 ~ 2016</b>
 								</Col>
 								<Col>
 									<b>Bachelor of Engineering (Computer Engineering)</b><br />
@@ -97,7 +105,7 @@ class Resume extends React.Component {
 							</Row>
 							<Row className="py-4">
 								<Col sm={2} className="centered">
-									<b>2009-09 ~ 2011-04</b>
+									<b>2009~ 2011</b>
 								</Col>
 								<Col>
 									<b>Bachelor of Science (Pure and Applied Sciences)</b><br />
@@ -110,7 +118,7 @@ class Resume extends React.Component {
 							<Line />
 							<Row>
 								<Col sm={2} className="centered">
-									<b>2014-09 ~ 2015-03</b>
+									<b>2014 ~ 2015</b>
 								</Col>
 								<Col>
 									<b>Orchestr8 - Capstone Project</b><br />
@@ -119,7 +127,7 @@ class Resume extends React.Component {
 							</Row>
 							<Row className="py-4">
 								<Col sm={2} className="centered">
-									<b>2013-09 ~ 2013-12</b>
+									<b>2013 ~ 2013</b>
 								</Col>
 								<Col>
 									<b>"Sumo" Robot</b><br />
@@ -131,13 +139,14 @@ class Resume extends React.Component {
 							<h3>Technologies</h3>
 							<Line />
 							<div className="pl-4">
-								Ruby on Rails, React, NodeJS<br />
+								Ruby on Rails, React, NodeJS, Python, Solidity<br />
 								Docker, Kubernetes, AWS, Ansible, Git<br />
 								Mac, Linux, Windows
 							</div>
 						</Container>
 					</Card.Body>
 				</Card>
+				<br />
 			</Container>
 		)
 	}

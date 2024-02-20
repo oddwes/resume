@@ -4,7 +4,7 @@
   "homepage": "https://oddwes.github.io/resume",
   "private": true,
   "engines": {
-    "node": "18.17.0"
+    "node": "18.19.0"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

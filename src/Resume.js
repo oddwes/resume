@@ -11,13 +11,13 @@ class Resume extends React.Component {
 				<br />
 				<Card>
 					<Card.Header style={{ color: 'white', backgroundColor: "#30353F" }}>
-						<h1>oddwes</h1>
+						<h1>Julian Lai</h1>
 						<h3>An enthusiastic developer looking for his next project to obsess over</h3>
 						<div>
 							<b>Phone</b> (778) 682-4384
 						</div>
 						<div>
-							<b>E-mail</b> oddwes3.0@gmail.com
+							<b>E-mail</b> julianlai.777@gmail.com
 						</div>
 					</Card.Header>
 					<Card.Body text="black">

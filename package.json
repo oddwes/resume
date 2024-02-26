@@ -1,7 +1,7 @@
 {
   "name": "resume",
   "version": "1.1.29",
-  "homepage": "https://oddwes.github.io/resume",
+  "homepage": "https://oddwes.github.io/blockchain",
   "private": true,
   "engines": {
     "node": "18.19.0"

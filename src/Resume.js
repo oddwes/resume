@@ -9,7 +9,7 @@ class Resume extends React.Component {
 		return (
 			<Container>
 				<br />
-				<Card>
+				<Card id='divToPrint'>
 					<Card.Header style={{ color: 'white', backgroundColor: "#30353F" }}>
 						<h1>Julian Lai</h1>
 						<h3>An enthusiastic developer looking for his next project to obsess over</h3>

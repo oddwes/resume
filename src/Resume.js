@@ -24,30 +24,28 @@ class Resume extends React.Component {
 						<Container>
 							<h3>Work</h3>
 							<Line />
-							<Row className="pb-4">
-								<Col sm={2} className="centered">
-									<b>2021 ~ Present</b>
-								</Col>
+							<Row className="pl-4">
 								<Col>
 									<p>
-										<b>Senior Ruby Developer</b><br />
-										<i>Jane.app, Vancouver, BC</i>
+										<b>Senior Fullstack Developer </b>(2021 ~ Present)
+										<br />
+										<i>Jane.app, Vancouver, BC</i><br />
 									</p>
 									<p className="pl-4">
 										<List bulleted>
 											<List.Item>Project lead for Waitlist Notifications, Late Cancellation Fees and Group Profiles</List.Item>
 											<List.Item>Jane intern program mentor</List.Item>
+											<List.Item>Technologies: Ruby on Rails, React, Typescript, Docker, Postgresql, Git</List.Item>
 										</List>
 									</p>
 								</Col>
 							</Row>
-							<Row className="pb-4">
-								<Col sm={2} className="centered">
-									<b>2017 ~ 2021</b>
-								</Col>
+							<br/>
+							<Row className="pl-4">
 								<Col>
 									<p>
-										<b>System Integrations Developer</b><br />
+										<b>System Integrations Developer & Team Lead </b>(2017 ~ 2021)
+										<br />
 										<i>Diff Agency, Montreal, QC</i>
 									</p>
 									<p className="pl-4">
@@ -60,13 +58,12 @@ class Resume extends React.Component {
 									</p>
 								</Col>
 							</Row>
-							<Row className="pb-4">
-								<Col sm={2} className="centered">
-									<b>2015 ~ 2017</b>
-								</Col>
+							<br/>
+							<Row className="pl-4">
 								<Col>
 									<p>
-										<b>Java Developer</b><br />
+										<b>Java Developer </b>(2015 ~ 2017)
+										<br />
 										<i>123Certification, Montreal, QC</i>
 									</p>
 									<p className="pl-4">
@@ -80,60 +77,45 @@ class Resume extends React.Component {
 									</p>
 								</Col>
 							</Row>
+							<br/>
 						</Container>
 						<Container>
 							<h3>Education</h3>
 							<Line />
-							<Row>
-								<Col sm={2} className="centered">
-									<b>2024</b>
-								</Col>
-								<Col>
-									<b>Learn Solidity & Etherem Dev Bootcamp</b><br />
-									<i>Alchemy University</i>
-								</Col>
-							</Row>
-							<br />
-							<Row>
-								<Col sm={2} className="centered">
-									<b>2011 ~ 2016</b>
-								</Col>
-								<Col>
-									<b>Bachelor of Engineering (Computer Engineering)</b><br />
-									<i>Concordia University</i>
-								</Col>
-							</Row>
-							<Row className="py-4">
-								<Col sm={2} className="centered">
-									<b>2009~ 2011</b>
-								</Col>
-								<Col>
-									<b>Bachelor of Science (Pure and Applied Sciences)</b><br />
-									<i>Marianopolis College</i>
-								</Col>
-							</Row>
+							<div className="pl-4">
+								<List bulleted>
+									<List.Item>
+										<b>Learn Solidity & Etherem Dev Bootcamp</b><br />
+										<i>Alchemy University</i>
+									</List.Item>
+									<List.Item>
+										<b>Bachelor of Engineering (Computer Engineering)</b><br />
+										<i>Concordia University</i>
+									</List.Item>
+									<List.Item>
+										<b>Bachelor of Science (Pure and Applied Sciences)</b><br />
+										<i>Marianopolis College</i>
+									</List.Item>
+								</List>
+							</div>
+							<br/>
 						</Container>
 						<Container>
 							<h3>School Projects</h3>
 							<Line />
-							<Row>
-								<Col sm={2} className="centered">
-									<b>2014 ~ 2015</b>
-								</Col>
-								<Col>
-									<b>Orchestr8 - Capstone Project</b><br />
-									Musical interpreter, music sheet generator and robotic piano player
-								</Col>
-							</Row>
-							<Row className="py-4">
-								<Col sm={2} className="centered">
-									<b>2013 ~ 2013</b>
-								</Col>
-								<Col>
-									<b>"Sumo" Robot</b><br />
-									Atmega8 microcontroller, edge detection and opponent tracking
-								</Col>
-							</Row>
+							<div className="pl-4">
+								<List bulleted>
+										<List.Item>
+											<b>Orchestr8 - Capstone Project</b><br />
+											Musical interpreter, music sheet generator and robotic piano player
+										</List.Item>
+										<List.Item>
+											<b>"Sumo" Robot</b><br />
+											Atmega8 microcontroller, edge detection and opponent tracking
+										</List.Item>
+									</List>
+							</div>
+							<br/>
 						</Container>
 						<Container>
 							<h3>Technologies</h3>

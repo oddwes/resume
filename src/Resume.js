@@ -12,7 +12,6 @@ class Resume extends React.Component {
 				<Card id='divToPrint'>
 					<Card.Header style={{ color: 'white', backgroundColor: "#30353F" }}>
 						<h1>Julian Lai</h1>
-						<h3>An enthusiastic developer looking for his next project to obsess over</h3>
 						<div>
 							<b>Phone</b> (778) 682-4384
 						</div>
@@ -50,11 +49,11 @@ class Resume extends React.Component {
 									</p>
 									<p className="pl-4">
 										<List bulleted>
-											<List.Item>Design and development of custom middleware integrating Shopify with ERPs, WMSs, carrier services</List.Item>
-											<List.Item>Design and development of user-friendly admin dashboards which include job scheduling, product management, order processing, reporting</List.Item>
-											<List.Item>Developed ramp-up project to familiarize new developers with common integration business requirements and tech stack</List.Item>
-											<List.Item>Technologies: Ruby on Rails, Postgresql, AWS, Ansible, Capistrano, Git</List.Item>
-										</List>
+												<List.Item>Project lead for Sakara Subscriptions, Ontario Cannabis Store Order Processing, Boathouse Store Order Routing</List.Item>
+												<List.Item>Shopify integrations with ERPs, WMSs, carrier services</List.Item>
+												<List.Item>Automated product catalog management, order processing & reporting</List.Item>
+												<List.Item>Technologies: Ruby on Rails, Postgresql, AWS, Ansible, Capistrano, Git</List.Item>
+											</List>
 									</p>
 								</Col>
 							</Row>

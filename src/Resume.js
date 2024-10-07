@@ -8,8 +8,7 @@ class Resume extends React.Component {
 	render() {
 		return (
 			<Container>
-				<br />
-				<Card id='divToPrint'>
+				<Card id='divToPrint' style={{width: '850px', margin: 'auto'}}>
 					<Card.Header style={{ color: 'white', backgroundColor: "#30353F" }}>
 						<h1>Julian Lai</h1>
 						<div>
@@ -26,7 +25,7 @@ class Resume extends React.Component {
 							<Row className="pl-4">
 								<Col>
 									<p>
-										<b>Senior Fullstack Developer </b>(2021 ~ Present)
+										<b>Fullstack Developer </b>(2021 ~ Present)
 										<br />
 										<i>Jane.app, Vancouver, BC</i><br />
 									</p>
@@ -43,7 +42,7 @@ class Resume extends React.Component {
 							<Row className="pl-4">
 								<Col>
 									<p>
-										<b>System Integrations Developer & Team Lead </b>(2017 ~ 2021)
+										<b>System Integrations Developer</b>(2017 ~ 2021)
 										<br />
 										<i>Diff Agency, Montreal, QC</i>
 									</p>

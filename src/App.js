@@ -1,8 +1,9 @@
 import "./App.css";
-import React, { useRef }  from 'react';
-import Resume from "./Resume";
+import React, { useRef, useState }  from 'react';
+import Resume from "./components/Resume";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import { Variant, VariantContext } from "./components/Variant";
 
 function App() {
   const componentRef = useRef()
@@ -22,12 +23,15 @@ function App() {
     ;
   }
 
+  const [variant, setVariant] = useState('regular')
+
   return (
-    <>
+    <VariantContext.Provider value={variant}>
       <button className="rounded-button" onClick={printDocument}>Print to PDF</button>
+      <Variant setVariant={setVariant}/>
       <br />
       <Resume ref={componentRef}/>
-    </>
+    </VariantContext.Provider>
   )
 }
 

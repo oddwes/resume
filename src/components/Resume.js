@@ -1,6 +1,6 @@
 import "../App.css";
 import React, { useContext } from 'react';
-import { Card, Container, Row, Col, Nav } from "react-bootstrap";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import { List } from 'semantic-ui-react';
 import Line from "./Line";
 import { VariantContext } from "./Variant";

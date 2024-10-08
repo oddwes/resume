@@ -60,7 +60,7 @@ export const Resume = () => {
 								</p>
 								<p className="pl-4">
 									<List bulleted>
-										<List.Item>Project lead for Waitlist Notifications, Late Cancellation Fees and Group Profiles</List.Item>
+										<List.Item>Project lead for Waitlist Notifications, Late Cancellation Fees, Group Profiles, Treatment Add-ons</List.Item>
 										<List.Item>Jane intern program mentor</List.Item>
 										<List.Item>Technologies: Ruby on Rails, React, Typescript, Docker, Postgresql, Git</List.Item>
 									</List>

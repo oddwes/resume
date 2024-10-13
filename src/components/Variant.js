@@ -1,5 +1,5 @@
-import { createContext } from "react"
-import { Nav } from "react-bootstrap"
+import { createContext } from 'react'
+import { Nav } from 'react-bootstrap'
 
 export const VariantContext = createContext('regular')
 

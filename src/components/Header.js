@@ -1,5 +1,5 @@
-import React, { useContext } from "react"
-import { VariantContext } from "./Variant"
+import React, { useContext } from 'react'
+import { VariantContext } from './Variant'
 
 export const Header = () => {
   const variant = useContext(VariantContext)

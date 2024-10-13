@@ -1,4 +1,4 @@
-import Line from "./Line"
+import Line from './Line'
 
 export const Work = () => {
   return (
@@ -35,7 +35,7 @@ export const Work = () => {
                 <li>Ability to tack on one or multiple add-ons to an appointment, increasing the price and duration</li>
               </ul>
             </ul>
-            <li>Jane's <i>Developing Developers</i> program mentor</li>
+            <li>Jane&apos;s <i>Developing Developers</i> program mentor</li>
             <ul>
               <li>
                 Training individuals with non-technical backgrounds into becoming full-fledged developers

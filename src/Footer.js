@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './footer.css'
 
 const Footer = () => (
@@ -8,6 +6,6 @@ const Footer = () => (
       Brought to you by React, Docker and Yours Truly
     </p>
   </div>
-);
+)
 
-export default Footer;
+export default Footer

@@ -1,4 +1,4 @@
-import Line from "./Line"
+import Line from './Line'
 
 export const SchoolProjects = () => {
   return (
@@ -11,7 +11,7 @@ export const SchoolProjects = () => {
           Musical interpreter, music sheet generator and robotic piano player
         </li>
         <li>
-          <b>"Sumo" Robot</b><br />
+          <b>&quot;Sumo&quot; Robot</b><br />
           Atmega8 microcontroller, edge detection and opponent tracking
         </li>
       </ul>

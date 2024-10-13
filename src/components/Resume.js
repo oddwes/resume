@@ -40,8 +40,7 @@ export const Resume = () => {
 			)
 
 	return (
-		<Container>
-			{console.log(variant)}
+		<div>
 			<Card id='divToPrint' style={{width: '850px', margin: 'auto'}}>
 				<Card.Header style={{ color: 'white', backgroundColor: "#30353F" }}>
 					{name}
@@ -156,7 +155,7 @@ export const Resume = () => {
 				</Card.Body>
 			</Card>
 			<br />
-		</Container>
+		</div>
 	)
 }
 

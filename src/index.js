@@ -1,8 +1,8 @@
+import App from './App'
+import Footer from './Footer'
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App'
 import reportWebVitals from './reportWebVitals'
-import Footer from './Footer'
 
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'

@@ -1,9 +1,10 @@
-import './App.css'
+import { Variant, VariantContext } from './components/Variant'
 import { useRef, useState }  from 'react'
 import Resume from './components/Resume'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
-import { Variant, VariantContext } from './components/Variant'
+
+import './App.css'
 
 function App() {
   const componentRef = useRef()

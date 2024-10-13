@@ -22,6 +22,13 @@ export default [
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'off',
       'react/prop-types': 'off',
+      'sort-imports': ['error', {
+        'ignoreCase': false,
+        'ignoreDeclarationSort': false,
+        'ignoreMemberSort': false,
+        'memberSyntaxSortOrder': ['all', 'multiple', 'single', 'none'],
+        'allowSeparatedGroups': false
+      }]
     },
   }
 ]

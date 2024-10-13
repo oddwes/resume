@@ -12,7 +12,7 @@ import { Header } from './Header';
 export const Resume = () => {
 	return (
 		<div>
-			<Card id='divToPrint' style={{width: '850px', margin: 'auto'}}>
+			<Card id='divToPrint' style={{width: '950px', margin: 'auto'}}>
 				<Card.Header style={{ color: 'white', backgroundColor: "#30353F" }}>
 					<Header />
 				</Card.Header>

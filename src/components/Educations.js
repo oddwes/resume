@@ -1,4 +1,3 @@
-import { List } from "semantic-ui-react"
 import Line from "./Line"
 
 export const Education = () => {

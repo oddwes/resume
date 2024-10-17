@@ -1,3 +1,4 @@
+import { Col, Row } from 'react-bootstrap'
 import React, { useContext } from 'react'
 import { VariantContext } from './Variant'
 
@@ -37,8 +38,17 @@ export const Header = () => {
 
   return (
     <React.Fragment>
-      {name}
-      {contactInfo}
+			<Row>
+				<Col>
+					{name}
+					{contactInfo}
+				</Col>
+				<Col>
+					<h3 style={{textAlign: 'right'}}>
+						Fullstack Developer
+					</h3>
+				</Col>
+			</Row>
     </React.Fragment>
   )
 }

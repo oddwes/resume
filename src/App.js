@@ -18,8 +18,8 @@ function App() {
       .then((canvas) => {
         const imgData = canvas.toDataURL('image/png')
         const pdf = new jsPDF()
-        pdf.addImage(imgData, 'JPEG', 0, 0, width, height)
-        pdf.save('download.pdf')
+        pdf.addImage(imgData, 'JPEG', 0, 0, width, height, '', 'FAST')
+        pdf.save('resume.pdf')
       })
 
   }

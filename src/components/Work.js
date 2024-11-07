@@ -14,6 +14,8 @@ export const Work = () => {
       </div>
       <div>
           <ul>
+            <li>Clinic management software</li>
+            <li>Monolithic webapp with React/Typescript frontend, Ruby on rails backend and Postrgresql database</li>
             <li>Project lead for Waitlist Notifications, Late Cancellation Fees, Group Profiles, Treatment Add-ons</li>
             <ul>
               <li>Waitlist Notifications</li>
@@ -53,11 +55,14 @@ export const Work = () => {
       </div>
       <div>
         <ul>
+          <li>Shopify integrations for order processing, inventory and product catalog management, and reporting</li>
+          <li>Ruby on rails webapps with Postrgresql, hosted on AWS</li>
           <li>Project lead for:</li>
           <ul>
             <li>Sakara Subscriptions</li>
             <ul>
               <li>Processed ~10k weekly meals subscriptions with one-off and recurring add-ons</li>
+              <li>Custom subscription and add-ons service built around Shopify payment capture (built pre-Shopify Subscriptions)</li>
             </ul>
           </ul>
           <ul>

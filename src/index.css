@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  .main-panel {
-    @apply p-4;
-  }
-
   .job-header {
     @apply text-lg font-bold mb-2;
   }

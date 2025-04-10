@@ -1,8 +1,8 @@
 import Line from './Line'
 
-export const Technologies: React.FC = () => {
+export const Technologies = () => {
   return (
-    <div className="main-panel">
+    <div className="px-4">
       <h3 className="text-xl font-bold mb-2">Technologies</h3>
       <Line />
       <div className="pl-4 text-gray-700">

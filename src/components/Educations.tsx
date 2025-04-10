@@ -1,11 +1,11 @@
 import Line from './Line'
 
-export const Education: React.FC = () => {
+export const Education = () => {
   return (
-    <div className="main-panel">
+    <div className="px-4">
       <h3 className="text-xl font-bold mb-2">Education</h3>
       <Line />
-      <ul className="space-y-4">
+      <ul className="space-y-2">
         <li>
           <b className="text-lg">Learn Solidity & Etherem Dev Bootcamp</b><br />
           <i className="text-gray-600">Alchemy University</i>

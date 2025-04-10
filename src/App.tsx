@@ -4,7 +4,7 @@ import Resume from './components/Resume'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
 
-const App: React.FC = () => {
+const App = () => {
   const componentRef = useRef<HTMLDivElement>(null)
 
   const printDocument = async (): Promise<void> => {

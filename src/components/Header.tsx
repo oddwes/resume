@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { VariantContext } from './Variant'
 
-export const Header: React.FC = () => {
+export const Header = () => {
   const variant = useContext(VariantContext)
 
   const name =
@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
       </div>
       <div>
         <h3 className="text-xl text-right">
-          Fullstack Developer
+          Senior Fullstack Developer
         </h3>
       </div>
     </div>

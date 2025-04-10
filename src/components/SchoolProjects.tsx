@@ -1,11 +1,11 @@
 import Line from './Line'
 
-export const SchoolProjects: React.FC = () => {
+export const SchoolProjects = () => {
   return (
-    <div className="main-panel">
+    <div className="px-4">
       <h3 className="text-xl font-bold mb-2">School Projects</h3>
       <Line />
-      <ul className="space-y-4">
+      <ul className="space-y-2">
         <li>
           <b className="text-lg">Orchestr8 - Capstone Project</b><br />
           <span className="text-gray-600">Musical interpreter, music sheet generator and robotic piano player</span>

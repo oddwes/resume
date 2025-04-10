@@ -1,5 +1,6 @@
 import { Work } from './Work'
 import { SectionHeader } from './SectionHeader'
+import { Mail, Github, Linkedin, Smartphone } from 'lucide-react';
 
 export const ModernLayout = () => {
   return (
@@ -19,15 +20,26 @@ export const ModernLayout = () => {
 
           <div>
             <p className="text-xl font-bold mb-2">Contact</p>
-            <div className="text-sm text-gray-300">
+            <div className="text-sm text-gray-300 space-y-1">
               <div className="flex items-center gap-2">
-                <p>@oddwes</p>
+                <Github />
+                <a href="https://github.com/oddwes" target="_blank" rel="noopener noreferrer" className="text-blue-600">
+                  github.com/oddwes
+                </a>
               </div>
               <div className="flex items-center gap-2">
-                <p>github.com/oddwes</p>
-              </div>
-              <div className="flex items-center gap-2">
+                <Mail />
                 <p>oddwes3.0@gmail.com</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <Smartphone />
+                <p>778-682-4384</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <Linkedin />
+                <a href="https://www.linkedin.com/in/julian-l-06223795" target="_blank" rel="noopener noreferrer" className="text-blue-600">
+                  linkedin.com
+                </a>
               </div>
             </div>
           </div>

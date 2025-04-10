@@ -1,23 +1,16 @@
-import { forwardRef } from 'react'
-import { Education } from './Educations'
-import { Technologies } from './Technologies'
-import { Work } from './Work'
-import { Header } from './Header'
+import { forwardRef, useContext } from 'react'
+import { ModernLayout } from './ModernLayout'
+import { VariantContext } from '../contexts/Variant'
+import { OldLayout } from './OldLayout'
 
 export const Resume = forwardRef<HTMLDivElement>((_, ref) => {
+  const variant = useContext(VariantContext)
+
   return (
-    <div>
+    <div >
       <div id='divToPrint' ref={ref} className="w-[1000px] mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-        <div className="bg-[#30353F] text-white p-4">
-          <Header />
-        </div>
-        <div className="p-6 space-y-2">
-          <Work />
-          <br />
-          <Education />
-          <br />
-          <Technologies />
-        </div>
+        {variant === 'cool' && <ModernLayout />}
+        {(variant === 'regular' || variant === 'blockchain') && <OldLayout />}
       </div>
       <br />
     </div>

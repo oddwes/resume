@@ -29,7 +29,7 @@ export const ModernLayout = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail />
-                <p>oddwes3.0@gmail.com</p>
+                <p>julianlai.777@gmail.com</p>
               </div>
               <div className="flex items-center gap-2">
                 <Smartphone />
@@ -114,13 +114,8 @@ export const ModernLayout = () => {
               </p>
               <ul className="text-sm list-disc pl-4 space-y-1">
                 <li>
-                  <a href="https://github.com/oddwes/english-immersion-ai" target="_blank" rel="noopener noreferrer" className="text-blue-600">
-                    https://github.com/oddwes/english-immersion-ai
-                  </a>
-                </li>
-                <li>
-                  <a href="https://english-immersion-ai.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600">
-                    https://english-immersion-ai.vercel.app
+                  <a href="https://github.com/oddwes/jane" target="_blank" rel="noopener noreferrer" className="text-blue-600">
+                    https://github.com/oddwes/jane
                   </a>
                 </li>
                 <li>Mobile first, AI powered English immersion tool</li>

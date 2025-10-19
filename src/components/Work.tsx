@@ -7,7 +7,7 @@ export const Work = () => {
       <div className="space-y-4">
         <div>
           <p className="text-lg font-bold mb-2">
-            <b>Senior Fullstack Developer </b>(2021 ~ Present)
+            <b>Senior Fullstack Developer </b>(2021 ~ 2025)
             <br />
             <i className="text-gray-600">Jane.app, Vancouver, BC</i><br />
           </p>
@@ -41,6 +41,22 @@ export const Work = () => {
                 <li>Ontario Cannabis Store, high volume order processing (5~10 orders/sec on launch night) and inventory management</li>
                 <li>Boathouse Stores, order routing algorithm for optimizing online order fulfillment out of 100 locations across Canada, which saved ~3h/day of manual labour</li>
               </ul>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p className="text-lg font-bold mb-2">
+            <b>Java Developer </b>(2015 ~ 2017)
+            <br />
+            <i className="text-gray-600">123Certification, Montreal, QC</i>
+          </p>
+          <div className="text-sm pl-4">
+            <ul className="list-disc">
+              <li>Modular welding simulator (Arc+).</li>
+              <li>Visual tracking system integration, tracking calibration module.</li>
+              <li>Setup SVN and Jenkins build slave servers.</li>
+              <li>Design and development of the core framework and features for the simulator's second generation.</li>
+              <li>Optimization of graph-travelling algorithm for analysis of complex 3D shapes.</li>
             </ul>
           </div>
         </div>

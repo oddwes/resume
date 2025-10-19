@@ -4,10 +4,10 @@ import { Mail, Github, Linkedin, Smartphone } from 'lucide-react';
 
 export const ModernLayout = () => {
   return (
-    <div className="flex">
+    <div className="flex h-full">
       {/* Left sidebar */}
-      <div className="w-1/4 bg-gray-800 text-white p-6 py-8 space-y-6 flex flex-col justify-between">
-        <div className="space-y-6">
+      <div className="w-1/4 bg-gray-800 text-white p-6 py-8 flex flex-col justify-between min-h-0">
+        <div className="space-y-6 flex flex-col grow">
           {/* <div className="rounded-full overflow-hidden w-48 h-48 mx-auto mb-8 bg-emerald-800" /> */}
 
           <div>
@@ -59,8 +59,8 @@ export const ModernLayout = () => {
         <div>
           <h2 className="text-xl font-bold mb-4">Education</h2>
           <div className="text-sm text-gray-300">
-            <h3 className="font-bold">Bachelor of Computer Engineering</h3>
-            <p className="text-gray-300">Concordia University</p>
+            <h3 className="font-bold">Bachelor of Computer Engineering (2011 ~ 2016)</h3>
+            <p className="text-gray-300">Concordia University, Montreal, QC</p>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@ export const ModernLayout = () => {
                 <li>Built on NextJS. Integrates ElizaOS, Coinbase Wallet SDK</li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <p className="text-lg font-bold mb-2">
                 <b>Heather</b>
               </p>
@@ -132,7 +132,7 @@ export const ModernLayout = () => {
                 <li>AI generated training plans based on historical training data</li>
                 <li>Dashboard to summarize activities, backed by StravaAPI</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

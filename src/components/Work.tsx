@@ -13,13 +13,10 @@ export const Work = () => {
           </p>
           <div className="text-sm pl-4">
             <ul className="list-disc">
-              <li>Brand-safe accounts platform (used by ETHDenver, Polygon & Arbitrum accounts)</li>
-              <li>Built:</li>
-              <ul className="list-disc pl-4">
-                <li>Full-functioning wallet (transfer and swap whitelisted tokens and NFTs)</li>
-                <li>Membership tiers for community gating with Stripe integration</li>
-                <li>Account status and approvals</li>
-              </ul>
+              <li>Full-stack development on brand-safe wallet/accounts platform (clients include ETHDenver, Polygon, Arbitrum)</li>
+              <li>Shipped in-app wallet: transfer and swap whitelisted tokens and NFTs</li>
+              <li>Implemented membership tiers and community gating with Stripe</li>
+              <li>Built account status and approval flows for compliance and ops</li>
             </ul>
           </div>
         </div>
@@ -31,14 +28,13 @@ export const Work = () => {
           </p>
           <div className="text-sm pl-4">
             <ul className="list-disc">
-              <li>Clinic management software</li>
-              <li>Monolithic webapp with React/Typescript frontend, Ruby on rails backend</li>
-              <li>Mentor for internal training program that allowed support staff with non-technical backgrounds to become full-fledged developers</li>
-              <li>Project lead for</li>
+              <li>Full-stack on clinic management product (React/TypeScript, Ruby on Rails)</li>
+              <li>Mentored internal program that upskilled support staff into developers</li>
+              <li>Project lead for:</li>
               <ul className="list-disc pl-4">
-                <li>Waitlist Notifications, an automated notification system which backfills ~7k cancelled appointments per week</li>
-                <li>Late cancellation fees, allowing clinics to capture ~$175k of potentially lost revenue from cancelled appointments</li>
-                <li>Treatment add-ons, allowing clinics to augment appointments with additional services</li>
+                <li>Waitlist Notifications — automated backfill of ~7k cancelled appointments/week</li>
+                <li>Late cancellation fees — feature capturing ~$175k previously lost revenue</li>
+                <li>Treatment add-ons — augmenting appointments with additional billable services</li>
               </ul>
             </ul>
           </div>
@@ -52,12 +48,12 @@ export const Work = () => {
           </p>
           <div className="text-sm pl-4">
             <ul className="list-disc">
-              <li>Designed and deployed Shopify integrations for a variety of use cases and business models</li>
+              <li>Designed and delivered Shopify integrations across e‑commerce, subscriptions, and high-volume retail</li>
               <li>Project lead for:</li>
               <ul className="list-disc pl-4">
-                <li>Sakara Subscriptions, meal delivery service processing over 10k weekly subscriptions, managed by in-house built subscription management platform, including customization and add-ons</li>
-                <li>Ontario Cannabis Store, high volume order processing (5~10 orders/sec on launch night) and inventory management</li>
-                <li>Boathouse Stores, order routing algorithm for optimizing online order fulfillment out of 100 locations across Canada, which saved ~3h/day of manual labour</li>
+                <li>Sakara Subscriptions — in-house subscription platform (10k+ weekly subs), customization and add-ons</li>
+                <li>Ontario Cannabis Store — order processing at 5–10 orders/sec at launch, inventory management</li>
+                <li>Boathouse Stores — order-routing across 100 locations; eliminated ~3h/day manual fulfillment</li>
               </ul>
             </ul>
           </div>
@@ -70,11 +66,11 @@ export const Work = () => {
           </p>
           <div className="text-sm pl-4">
             <ul className="list-disc">
-              <li>Modular welding simulator (Arc+).</li>
-              <li>Visual tracking system integration, tracking calibration module.</li>
-              <li>Setup SVN and Jenkins build slave servers.</li>
-              <li>Design and development of the core framework and features for the simulator's second generation.</li>
-              <li>Optimization of graph-travelling algorithm for analysis of complex 3D shapes.</li>
+              <li>Core development on Arc+, a modular welding simulator</li>
+              <li>Integrated visual tracking system and built tracking calibration module</li>
+              <li>Set up SVN and Jenkins build slave servers</li>
+              <li>Designed and developed core framework and features for second-generation simulator</li>
+              <li>Optimized graph-traversal algorithm for complex 3D shape analysis</li>
             </ul>
           </div>
         </div>

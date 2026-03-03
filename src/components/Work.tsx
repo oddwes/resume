@@ -7,6 +7,24 @@ export const Work = () => {
       <div className="space-y-4">
         <div>
           <p className="text-lg font-bold mb-2">
+            <b>Blockchain Developer </b>(2025 ~ Present)
+            <br />
+            <i className="text-gray-600">Unicorn.eth</i><br />
+          </p>
+          <div className="text-sm pl-4">
+            <ul className="list-disc">
+              <li>Brand-safe accounts platform (used by ETHDenver, Polygon & Arbitrum accounts)</li>
+              <li>Built:</li>
+              <ul className="list-disc pl-4">
+                <li>Full-functioning wallet (transfer and swap whitelisted tokens and NFTs)</li>
+                <li>Membership tiers for community gating with Stripe integration</li>
+                <li>Account status and approvals</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p className="text-lg font-bold mb-2">
             <b>Senior Fullstack Developer </b>(2021 ~ 2025)
             <br />
             <i className="text-gray-600">Jane.app, Vancouver, BC</i><br />

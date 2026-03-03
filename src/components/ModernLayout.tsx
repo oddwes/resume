@@ -66,10 +66,10 @@ export const ModernLayout = () => {
       </div>
 
       {/* Main content */}
-      <div className="w-3/4 p-8 bg-white">
+      <div className="w-3/4 p-4 bg-white">
         <div className="mb-4 text-right">
-          <h1 className="text-5xl font-bold mb-2">Julian Lai</h1>
-          <h2 className="text-2xl text-gray-600">Senior Fullstack Developer</h2>
+          <h1 className="text-4xl font-bold mb-2">Julian Lai</h1>
+          <h2 className="text-xl text-gray-600">Senior Fullstack Developer</h2>
         </div>
 
         <div className="mb-8">
@@ -81,7 +81,26 @@ export const ModernLayout = () => {
           <div className="space-y-4">
             <div>
               <p className="text-lg font-bold mb-2">
-                <b>Teleos - ETHDenver Hackhaton</b>
+                <b>Arbitrum Coinflip Game</b>
+              </p>
+              <ul className="text-sm list-disc pl-4 space-y-1">
+                <li>
+                  <a href="https://github.com/oddwes/arbitrum-coinflip" target="_blank" rel="noopener noreferrer" className="text-blue-600">
+                    github.com/oddwes/arbitrum-coinflip
+                  </a>
+                </li>
+                <li>
+                  <a href="https://arbitrum-coinflip.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600">
+                    arbitrum-coinflip.vercel.app
+                  </a>
+                </li>
+                <li>On-chain coinflip dApp on Arbitrum: wallet connect, Heads/Tails bet, streak tracking, mint Silver (2 wins) / Gold (3 wins) NFTs</li>
+                <li>Next.js, TypeScript</li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-lg font-bold mb-2">
+                <b>Teleos - ETHDenver 2025 Hackhaton</b>
               </p>
               <ul className="text-sm list-disc pl-4 space-y-1">
                 <li>

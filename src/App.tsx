@@ -11,6 +11,19 @@ const App = () => {
     const input = document.getElementById('divToPrint')
     if (!input) return
 
+    const inputRect = input.getBoundingClientRect()
+    const links: { href: string; left: number; top: number; width: number; height: number }[] = []
+    input.querySelectorAll<HTMLAnchorElement>('a[href^="http"]').forEach((a) => {
+      const r = a.getBoundingClientRect()
+      links.push({
+        href: a.href,
+        left: r.left - inputRect.left,
+        top: r.top - inputRect.top,
+        width: r.width,
+        height: r.height
+      })
+    })
+
     const canvas = await html2canvas(input, {
       scale: 2,
       useCORS: true,
@@ -19,8 +32,8 @@ const App = () => {
       windowHeight: input.clientHeight
     })
 
-    const imgWidth = 210 // A4 width in mm
-    const pageHeight = 297 // A4 height in mm
+    const imgWidth = 210
+    const pageHeight = 297
     const imgHeight = (canvas.height * imgWidth) / canvas.width
 
     const pdf = new jsPDF('p', 'mm', 'a4')
@@ -38,6 +51,21 @@ const App = () => {
         imgHeight
       )
     }
+
+    const scaleX = imgWidth / input.clientWidth
+    const scaleY = imgHeight / input.clientHeight
+    links.forEach(({ href, left, top, width, height }) => {
+      const pdfX = left * scaleX
+      const pdfY = top * scaleY
+      const pdfW = width * scaleX
+      const pdfH = height * scaleY
+      const pageIndex = Math.floor(pdfY / pageHeight)
+      if (pageIndex >= 0 && pageIndex < pagesNeeded) {
+        pdf.setPage(pageIndex + 1)
+        pdf.link(pdfX, pdfY - pageIndex * pageHeight, pdfW, pdfH, { url: href })
+      }
+    })
+
     pdf.save('resume.pdf')
   }
 

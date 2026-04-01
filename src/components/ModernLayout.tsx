@@ -1,6 +1,6 @@
 import { Work } from './Work'
-import { SectionHeader } from './SectionHeader'
 import { Mail, Github, Linkedin, Smartphone } from 'lucide-react';
+import { Projects } from './Projects'
 
 export const ModernLayout = () => {
   return (
@@ -12,13 +12,13 @@ export const ModernLayout = () => {
             <p className="text-lg font-bold mb-1">About</p>
             <ul className="text-xs text-gray-300 list-disc ml-5 space-y-0.5">
               <li>
-                Full-stack engineer building <span className="font-semibold text-white">Web3 applications and wallet infrastructure</span>
+                Senior full-stack engineer building <span className="font-semibold text-white">AI-enabled products, internal tools, and wallet infrastructure</span>
               </li>
               <li>
-                Strong experience with <span className="font-semibold text-white">TypeScript, React, Node, and EVM integrations</span>
+                Strong experience with <span className="font-semibold text-white">TypeScript, React, Node, LLM-powered interfaces, and EVM integrations</span>
               </li>
               <li>
-                Interested in <span className="font-semibold text-white">blockchain analytics and on-chain data exploration</span>
+                Built products for <span className="font-semibold text-white">operators, communities, and non-technical end users</span> in fast-moving environments
               </li>
             </ul>
           </div>
@@ -46,11 +46,19 @@ export const ModernLayout = () => {
               </div>
               <div>
                 <span className="font-semibold text-white">Frameworks</span>
-                <div className="ml-2">React, Next.js, Node.js, Ruby on Rails</div>
+                <div className="ml-2">React, Next.js, Node.js, Ruby on Rails, ElizaOS</div>
               </div>
               <div>
                 <span className="font-semibold text-white">Infrastructure</span>
                 <div className="ml-2">Docker, Kubernetes, AWS, GCP</div>
+              </div>
+              <div>
+                <span className="font-semibold text-white">Applied AI</span>
+                <ul className="ml-3 list-disc space-y-0.5">
+                  <li>LLM-powered chat interfaces</li>
+                  <li>Prompt-driven knowledge retrieval</li>
+                  <li>AI agent prototypes and workflow tooling</li>
+                </ul>
               </div>
               <div>
                 <span className="font-semibold text-white">Web3</span>
@@ -84,13 +92,13 @@ export const ModernLayout = () => {
       </div>
 
       {/* Main content */}
-      <div className="w-3/4 px-4 bg-white">
+      <div className="w-3/4 p-4 bg-white">
         <div className="text-right">
           <h1 className="text-2xl font-bold mb-0.5 inline-flex w-full justify-end items-baseline gap-3">
             <span>Julian</span>
             <span>Lai</span>
           </h1>
-          <h2 className="text-base text-gray-600 mb-1">Full-Stack Engineer — Web3 Applications</h2>
+          <h2 className="text-base text-gray-600 mb-1">Senior Full-Stack Engineer — Applied AI, Internal Tools, and Product Systems</h2>
           <p className="text-[13px] flex flex-wrap items-center justify-end gap-x-2 gap-y-0 leading-[18px]">
             <a href="https://github.com/oddwes" target="_blank" rel="noopener noreferrer" className="text-blue-600 inline-flex items-center gap-1.5 h-[18px]">
               <span className="inline-flex items-center justify-center shrink-0 w-[14px] h-[14px] translate-y-[2.5px] [&_svg]:block">
@@ -109,62 +117,7 @@ export const ModernLayout = () => {
         </div>
 
         <div className="mb-4">
-          <SectionHeader title="Projects" />
-          <div className="space-y-2">
-            <div>
-              <p className="text-base font-bold mb-0.5">
-                <b>Crypto Market Health Dashboard — Dune</b>
-              </p>
-              <ul className="text-[13px] list-disc pl-4 space-y-0.5">
-                <li>Dune: <a href="https://dune.com/oddwes/bev" target="_blank" rel="noopener noreferrer" className="text-blue-600">dune.com/oddwes/bev</a></li>
-                <li>Built analytics dashboard tracking stablecoin supply, bridge flows, and liquidity migration</li>
-                <li>Wrote SQL queries analyzing cross-chain capital flows</li>
-                <li>Implemented time-series charts and parameterized queries</li>
-                <li>Designed dashboard to monitor crypto market health indicators</li>
-                <li>Tracked chains with elevated trading activity to identify shifts in speculative market demand</li>
-              </ul>
-            </div>
-            <div>
-              <p className="text-base font-bold mb-0.5">
-                <b>Pondify — ETHDenver 2026 Hackathon</b>
-              </p>
-              <ul className="text-[13px] list-disc pl-4 space-y-0.5">
-                <li>
-                  Devfolio: <a href="https://devfolio.co/projects/pondify" target="_blank" rel="noopener noreferrer" className="text-blue-600">Pondify</a> |
-                  Code: <a href="https://github.com/oddwes/pondify" target="_blank" rel="noopener noreferrer" className="text-blue-600">github.com/oddwes/pondify</a>
-                </li>
-                <li>Built Web3 application during ETHDenver 2026 BUIDLathon</li>
-                <li>Focused on improving <b>on-chain user interactions</b> and <b>developer tooling</b></li>
-                <li>Implemented blockchain integrations and smart-contract interactions</li>
-                <li>Built full stack prototype using <b>Next.js</b> and <b>Web3 tooling</b></li>
-              </ul>
-            </div>
-            <div>
-              <p className="text-base font-bold mb-0.5">
-                <b>Teleos — ETHDenver 2025 Hackathon</b>
-              </p>
-              <ul className="text-[13px] list-disc pl-4 space-y-0.5">
-                <li>Devfolio: <a href="https://devfolio.co/projects/teleosai-4cca" target="_blank" rel="noopener noreferrer" className="text-blue-600">TeleosAI</a> |
-                  Code: <a href="https://github.com/aramxc/teleos" target="_blank" rel="noopener noreferrer" className="text-blue-600">github.com/aramxc/teleos</a>
-                </li>
-                <li>Top 10 – Infrastructure Track</li>
-                <li>The Shopify of AI agents</li>
-                <li>Built with <b>Next.js</b> and modern <b>Web3 integrations</b>Integrated <b>Coinbase Wallet SDK</b> and <b>ElizaOS</b></li>
-              </ul>
-            </div>
-            <div>
-              <p className="text-base font-bold mb-0.5">
-                <b>Arbitrum Coinflip Game</b>
-              </p>
-              <ul className="text-[13px] list-disc pl-4 space-y-0.5">
-                <li>Code: <a href="https://github.com/oddwes/arbitrum-coinflip" target="_blank" rel="noopener noreferrer" className="text-blue-600">github.com/oddwes/arbitrum-coinflip</a></li>
-                <li>Fully on-chain coinflip game built on <b>Arbitrum</b></li>
-                <li>Implemented <b>wallet connect</b>, <b>bet settlement</b>, and <b>streak tracking</b></li>
-                <li>NFT reward system for win streaks (Silver / Gold tiers)</li>
-                <li>Full stack application built with <b>Next.js + TypeScript</b></li>
-              </ul>
-            </div>
-          </div>
+          <Projects />
         </div>
 
         <div>

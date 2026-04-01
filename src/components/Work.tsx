@@ -12,11 +12,11 @@ export const Work = () => {
             <i className="text-gray-600 text-sm">Unicorn.eth</i>
           </p>
           <ul className="text-[13px] list-disc pl-4 space-y-0.5">
-            <li>Built wallet infrastructure and accounts platform used by communities including ETHDenver, Polygon, and Arbitrum.</li>
+            <li>Built wallet infrastructure and account systems used by communities including ETHDenver, Polygon, and Arbitrum.</li>
             <li>Implemented token and NFT transaction flows including transfer, swap, and wallet permissions.</li>
             <li>Developed membership tiers and token-gated community access with Stripe integrations.</li>
-            <li>Designed account approval and compliance workflows for Web3 onboarding.</li>
-            <li>Built scalable React / TypeScript full-stack systems integrating on-chain data.</li>
+            <li>Designed onboarding, account approval, and compliance workflows for operational teams.</li>
+            <li>Built scalable React and TypeScript systems that connected user-facing products with on-chain data and internal workflows.</li>
           </ul>
         </div>
         <div>
@@ -26,9 +26,10 @@ export const Work = () => {
             <span className="text-gray-600 text-sm">Jane.app — Vancouver, BC</span>
           </p>
           <ul className="text-[13px] list-disc pl-4 space-y-0.5">
-            <li>Full-stack development on a large healthcare SaaS platform (React, TypeScript, Ruby on Rails).</li>
-            <li>Mentored internal program that trained support staff into developers.</li>
-            <li>Led multiple product initiatives including:</li>
+            <li>Full-stack development on a large healthcare SaaS platform used daily by clinics and administrative staff.</li>
+            <li>Built product and workflow improvements in React, TypeScript, and Ruby on Rails.</li>
+            <li>Mentored an internal program that trained support staff into developers.</li>
+            <li>Led multiple revenue and operations initiatives including:</li>
             <ul className="list-disc pl-4 space-y-0.5">
               <li><b>Waitlist Notifications:</b> Automated backfilling of ~7k cancelled appointments per week.</li>
               <li><b>Late Cancellation Fees:</b> Implemented billing workflow recovering ~$175k previously lost revenue.</li>
@@ -44,7 +45,7 @@ export const Work = () => {
           </p>
           <ul className="text-[13px] list-disc pl-4 space-y-0.5">
             <li>Designed and implemented Shopify integrations across ecommerce and subscription systems.</li>
-            <li>Built automation pipelines for high-volume retail operations.</li>
+            <li>Built automation pipelines for high-volume retail and fulfillment operations.</li>
             <li><b>Key projects:</b></li>
             <ul className="list-disc pl-4 space-y-0.5">
               <li><b>Sakara Subscriptions:</b> In-house subscription platform (~10k weekly subscriptions).</li>

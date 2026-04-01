@@ -1,5 +1,4 @@
-import { Variant, VariantContext } from './contexts/Variant'
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import Resume from './components/Resume'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
@@ -69,19 +68,14 @@ const App = () => {
     pdf.save('resume.pdf')
   }
 
-  const [variant, setVariant] = useState<string>('cool')
-
   return (
-    <VariantContext.Provider value={variant}>
-      <div className="p-4 bg-gray-100">
-        <div className="flex justify-between">
-          <Variant setVariant={setVariant} />
-          <button className="rounded-button" onClick={printDocument}>Print to PDF</button>
-        </div>
-        <br />
-        <Resume ref={componentRef} />
+    <div className="p-4 bg-gray-100">
+      <div className="flex justify-end">
+        <button className="rounded-button" onClick={printDocument}>Print to PDF</button>
       </div>
-    </VariantContext.Provider>
+      <br />
+      <Resume ref={componentRef} />
+    </div>
   )
 }
 
